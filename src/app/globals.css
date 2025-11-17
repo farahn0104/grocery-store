@@ -1,0 +1,213 @@
+@import "tailwindcss";
+
+::-webkit-scrollbar{
+  width: 8px !important;
+  height: 8px !important;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #02B290;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+  background-color: #fff;
+}
+
+@theme {
+  --color-primary: #02b290;
+  --color-secondary: #353535;
+}
+
+.container {
+  margin: auto;
+  width: 96%;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 100%;
+  align-items: center;
+}
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  color: black;
+  width: 15px !important  ;
+  font-size: 10px;
+}
+@layer utilities {
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    @apply !bg-primary;
+  }
+}
+.swiper-button-prev:hover svg,
+.swiper-button-next:hover svg{
+  color: white !important;
+}
+
+.MuiTabs-list button{
+  font-weight:600 !important ;
+}
+.MuiTabs-list .Mui-selected{
+ @apply !text-primary; 
+}
+.MuiTabs-indicator{
+  background-color: #02B290 !important;
+}
+.btn-border-g{
+  border: 1px solid #02B290 !important;
+  font-weight: 600 !important;
+  color: #02B290 !important;
+}
+.btn-border-g:hover{
+  background-color: #02B290 ;
+  color: #fff !important;
+  font-weight: 600 !important;
+}
+
+.btn-g{
+  
+  font-weight: 600 !important;
+  color: #fff !important;
+  background-color: #02B290 !important;
+  padding:8px 30px !important;
+  
+  
+}
+.btn-g:hover{
+  color: #fff !important;
+  background-color: #353535!important;
+  
+}
+
+hr{
+  border-color: rgba(0 , 0, 0, 0.2)!important;
+}
+
+.scroll::-webkit-scrollbar-thumb{
+  background:#ccc !important ;
+}
+
+.MuiFormGroup-root .MuiTypography-root {
+  font-size: 14px;
+  
+}
+
+.MuiFormGroup-root .Mui-checked .MuiSvgIcon-root{fill:#02B290 !important}
+.Mui-checked .MuiSvgIcon-root{fill:#02B290 !important}
+.MuiFormGroup-root .MuiFormControlLabel-root .MuiCheckbox-root{padding: 5px 10px !important; ;}
+
+.ReactCollapse--collapse{
+  transition: height 300ms;
+}
+.range-slider{
+  height: 5px !important;
+}
+
+
+  .range-slider .range-slider__thumb, .range-slider__range{
+  @apply !bg-primary;
+}
+
+.range-slider .range-slider__thumb{
+  width: 18px !important; 
+  height: 18px !important; 
+}
+.ratingFilter .MuiCheckbox-root{
+  padding-left: 0px  !important;
+
+}
+
+.MuiList-root li{
+  font-size: 14px !important;
+}
+
+.MuiPaginationItem-circular.Mui-selected{
+  background-color: #02B290 !important;
+  color: white !important;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+#qtyDrop .MuiList-root{
+max-height: 190px !important;
+overflow-y: scroll !important;
+}
+#qtyDrop .MuiList-root::-webkit-scrollbar-thumb{
+background-color: #ccc;
+}
+.scroll::-webkit-scrollbar-thumb{
+background-color: #ccc;
+}
+.react-international-phone-country-selector-button{
+  width: 60px !important;
+}
+.react-international-phone-input-container .react-international-phone-input{
+  width: 90% !important;
+  border: 1px solid rgba(0,0,0,0.2) !important;
+  
+}
+.react-international-phone-input-container .react-international-phone-input:focus{
+border: 1px solid rgba(0,0,0,0.2) !important;
+}
+
+.MyActive .active::before {
+  content: '';
+  width: 3px;
+
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #02B290!important;
+}
+.MyActive .active svg{
+  color: #02B290!important;
+}
+.react-international-phone-input-container .react-international-phone-input{
+  width: 90% !important;
+   border: 1px solid rgba(0,0,0,0.2) !important;
+  }
+
+.react-international-phone-input-container .react-international-phone-input:focus {
+  border: 1px solid rgba(0,0,0, 0.2) !important;
+  /* background: #028290 !important; */
+}
+
+.react-international-phone-country-selector-dropdown-index {
+  z-index: 1000 !important; 
+  border: 0px important;
+  box-shadow: none !important;
+  /* background: #028290 !important; */
+}
+
+.react-international-phone-country-selector-dropdown li{
+  padding: 7px 10px !important;
+  /* background: #028290 !important; */
+}
+
+.myAcc.active::before{
+  content: '"'; 
+  width: 3px; 
+  height: 100%; 
+  position: absolute; 
+  left: 8px; 
+  top: 0px;
+   background: #028290 !important;
+  }
+
+
+.myAcc .active svg{color: #028290 !important;}
+
