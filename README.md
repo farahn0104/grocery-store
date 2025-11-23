@@ -2,6 +2,9 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+## Live Website Check it now 
+https://brobazar-app.netlify.app/
+
 First, run the development server:
 
 ```bash
